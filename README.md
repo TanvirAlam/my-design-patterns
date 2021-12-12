@@ -2,10 +2,26 @@
 
 - # React
 
-  - Stateless Components:
-  - State reducer:
-  - Conditional Rendering:
-  - Creational
+- ## State reducer
+
+  - The most `advanced pattern` in terms of inversion of control.
+  - It gives an advanced way for the user to `change` how your component operates internally.
+  - The code is similar to Custom Hook Pattern, but in addition the user defines a reducer which is passed to the hook.
+  - This `reducer` will overload any internal action of your component.
+  - In this example we have assocated the` State reducer pattern` and the `Custom hook pattern`
+  - but you could also use it with the `Compound components pattern` and pass the reducer directly to the main component Counter.
+
+  - Simple example: `/React-env/state-reducer`
+
+  - Give more controle: In the most complicated cases, using state `reducers` is the best way to leave control to the user.
+  - All your internal component’s actions are now accessible from the outside and can be overridden.
+
+    - ![/React-env/state-reducer/images/img.png](/React-env/state-reducer/images/img.png)
+    - ![/React-env/state-reducer/images/img_1.png](/React-env/state-reducer/images/img_1.png)
+
+  - Through these 5 advanced React patterns, we have seen different ways to take advantage of the concept of “inversion of control”.
+  - They give you a powerful way to create flexible and adaptable Components.
+  - ![/React-env/state-reducer/images/img_2.png](/React-env/state-reducer/images/img_2.png)
 
 - ## Render Props
 
@@ -23,10 +39,6 @@
     - Simple example: `/React-env/render-props`
     - Basically, we have `Wrapper` and `App` passes props (`render`) to Wrapper componenent with function that has the entire presentation layer.
     - This show how we can do seperation of concern, seperate the logic from presentation.
-
-  - Props Getters:
-  - Controlled Components:
-  - Custom Hook:
 
 - ## Higher-Order Components
 
@@ -50,13 +62,19 @@
     ```
 
   - Simple example: `/React-env/high-order-components`
-  -
-  - Context API:
-  - Presentational and Container Components:
-  - Compound components:
-  - Flux:
-  - Redux:
-  - Dependency injection:
+
+- ## Conditional Rendering:
+- ## Creational
+- ## Props Getters:
+- ## Controlled Components:
+- ## Custom Hook:
+- ## Stateless Components:
+- ## Context API:
+- ## Presentational and Container Components:
+- ## Compound components:
+- ## Flux:
+- ## Redux:
+- ## Dependency injection:
 
 - # Vue
 
