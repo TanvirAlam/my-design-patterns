@@ -21,12 +21,36 @@
     ```
 
     - Simple example: `/React-env/render-props`
-    - Basically, we have `Wrapper` and `App` passes props (`render`) to Wrapper componenent with function that has the entire presentation layer. this show how we can do seperation of concern, seperate the logic from presentation.
+    - Basically, we have `Wrapper` and `App` passes props (`render`) to Wrapper componenent with function that has the entire presentation layer.
+    - This show how we can do seperation of concern, seperate the logic from presentation.
 
   - Props Getters:
   - Controlled Components:
   - Custom Hook:
-  - Higher-Order Components:
+
+- ## Higher-Order Components
+
+  - Components take one or more components as arguments, and return a new upgraded component
+  - We don’t modify or mutate components. We create new ones.
+  - A HOC is used to compose components for code reuse.
+  - A HOC is a pure function. It has no side effects, returning only a new component.
+
+    ```
+    import React from 'react';
+    ********* Take in a component as argument WrappedComponent **********
+    const higherOrderComponent = (WrappedComponent) => {
+      ****** And return another component *******
+      class HOC extends React.Component {
+        render() {
+          return <WrappedComponent />;
+        }
+      }
+      return HOC;
+    };
+    ```
+
+  - Simple example: `/React-env/high-order-components`
+  -
   - Context API:
   - Presentational and Container Components:
   - Compound components:
